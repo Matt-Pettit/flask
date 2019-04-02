@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<form action = "http://localhost:5000/gchanthread" method = "get">
+   <p>Enter Thread number(on /g/):</p>
+   <p><input type = "text" name = "thread" /></p>
+   <p><input type = "submit" value = "submit" /></p>
+</form>
+<a href="/gchanboard">Back to Board</a>
+
+{% for your_list_element in your_list %}
+    <p>{{ your_list_element }} </p>
+    <p></p>
+{% endfor %}
+
+
+{% endblock %}

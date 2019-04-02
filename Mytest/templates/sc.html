@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Sent Command</h1>
+<p>sent command: {{  command  }}</p>
+
+<form action = "http://localhost:5000/server" method = "get">
+   <p>Enter another command:</p>
+   <p><input type = "text" name = "command" /></p>
+   <p><input type = "submit" value = "submit" /></p>
+</form>
+
+{% endblock %}
